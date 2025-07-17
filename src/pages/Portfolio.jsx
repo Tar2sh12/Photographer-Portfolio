@@ -1,7 +1,4 @@
-
 import { Link } from "react-router-dom";
-
-
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 import Footer from "../components/Footer";
@@ -9,7 +6,6 @@ import model1 from "../assets/model1.jpg";
 import model2 from "../assets/model2.jpg";
 import model3 from "../assets/model3.jpg";
 import model4 from "../assets/model4.jpg";
-
 
 const Portfolio = () => {
   return (
@@ -25,16 +21,41 @@ const Portfolio = () => {
           my work
         </h1>
         <p className="font-light text-[16px] md:text-[20px] mb-[36px] text-center md:text-left ">
-          A little bit from what I’ve been doing
+          A little bit from what I've been doing
         </p>
+        
+        {/* Added buttons for Photography and Videography */}
+        <div className="flex flex-col md:flex-row gap-4 mb-8">
+          <a
+            href="https://drive.google.com/drive/folders/10kdgoTMZ3SrZyDvH1BynRMxqHzaAQpno"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[16px] font-light uppercase border-[1px] border-white py-2 px-[36px] hover:text-[#111]
+              duration-300 relative before:absolute before:top-0 before:left-0 before:bg-white before:w-0 before:h-full before:-z-10 hover:before:w-full before:duration-300"
+          >
+            Photography
+          </a>
+          <a
+            href="https://drive.google.com/drive/folders/12_9LV_8w1F9mOm_wEAVK64f1UXDfzWN1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[16px] font-light uppercase border-[1px] border-white py-2 px-[36px] hover:text-[#111]
+              duration-300 relative before:absolute before:top-0 before:left-0 before:bg-white before:w-0 before:h-full before:-z-10 hover:before:w-full before:duration-300"
+          >
+            Videography
+          </a>
+        </div>
+        
         <Link
           to={"/contact"}
           className="text-[16px] font-light uppercase border-[1px] border-white py-2 px-[36px] hover:text-[#111]
-  duration-300 relative before:absolute before:top-0 before:left-0 before:bg-white before:w-0 before:h-full before:-z-10 hover:before:w-full before:duration-300"
+            duration-300 relative before:absolute before:top-0 before:left-0 before:bg-white before:w-0 before:h-full before:-z-10 hover:before:w-full before:duration-300"
         >
           contact me
         </Link>
       </motion.div>
+      
+      {/* Rest of your existing code */}
       <div className="fixed top-0 w-full h-full z-0 flex justify-end">
         <div className="w-full md:w-6/12 grid grid-cols-2 gap-2">
           <motion.div
@@ -70,7 +91,7 @@ const Portfolio = () => {
               transition={{ duration: 0.7, ease: "backInOut" }}
               className="object-cover object-center w-full h-full saturate-0  opacity-50"
               src={model3}
-                            alt=""
+              alt=""
             />
           </motion.div>
           <motion.div
