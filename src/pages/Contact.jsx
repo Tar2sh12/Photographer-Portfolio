@@ -15,9 +15,9 @@ const Contact = () => {
     event.preventDefault();
     if (name && email && message) {
       // Your EmailJS service ID, template ID, and user ID
-      const serviceId = "service_i7k0kgq";
-      const templateId = 'template_1h8vond';
-      const publicKey = 'fT7nhNDcJGpAke4Av';
+      const serviceId = "service_3to17yx";
+      const templateId = 'template_l73rdox';
+      const publicKey = 'B-_rNwrhqUhm8jUhB';
 
       // Create a new object that contains dynamic template params
       const templateParams = {
